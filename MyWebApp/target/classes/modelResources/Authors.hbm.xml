@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="chV.project.models.Authors" table="authors" schema="oneton">
+        <id name="idAuthors">
+            <column name="id_authors" sql-type="int(11)"/>
+        </id>
+        <property name="nameAuthor">
+            <column name="name_author" sql-type="varchar(45)" length="45"/>
+        </property>
+    </class>
+</hibernate-mapping>

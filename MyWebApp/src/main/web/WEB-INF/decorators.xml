@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<decorators defaultdir="/decorators">
+    <decorator name="default" page="MyDecorator.jsp">
+
+        <pattern>/</pattern>
+        <pattern>/dropFile*</pattern>
+        <pattern>/home</pattern>
+        <pattern>/moderator</pattern>
+    </decorator>
+
+    <decorator name="tables" page="tables.jsp">
+        <pattern>/table*</pattern>
+    </decorator>
+
+
+
+
+
+    <excludes>
+        <pattern>/uploadView</pattern>
+        <pattern>/table/delete*</pattern>
+        <pattern>/table/download*</pattern>
+        <pattern>/table/deleteByAuthor*</pattern>
+    </excludes>
+
+
+</decorators>

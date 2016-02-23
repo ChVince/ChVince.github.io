@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <mapping class="chV.project.models.Authors"/>
+    <mapping resource="modelResources/Authors.hbm.xml"/>
+    <mapping resource="modelResources/Files.hbm.xml"/>
+    <mapping class="chV.project.models.Files"/>
+    <mapping resource="modelResources/Moderators.hbm.xml"/>
+    <mapping class="chV.project.models.Moderators"/>
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
